@@ -20,6 +20,7 @@ LOGGING_CONFIG = {
             "class": "logging.FileHandler",
             "formatter": "simple",
             "filename": "data.log",
+            "encoding": "utf-8",
             "mode": "w"
         }
     },
