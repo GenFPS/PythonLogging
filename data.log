@@ -1,0 +1,9 @@
+2024-05-22 15:55:04,523 : root : INFO : Старт программы
+2024-05-22 15:55:16,010 : modules.menu : DEBUG : Your expression is 1 / 3
+2024-05-22 15:55:16,010 : modules.module.logic : DEBUG : Get expression 1 / 3
+2024-05-22 15:55:16,011 : modules.module.logic : DEBUG : Evaluated 0.3333333333333333
+2024-05-22 15:55:22,181 : modules.menu : DEBUG : Your expression is 1 / 0
+2024-05-22 15:55:22,181 : modules.module.logic : DEBUG : Get expression 1 / 0
+2024-05-22 15:55:22,181 : modules.module.logic : ERROR : Get an exception: division by zero
+2024-05-22 15:55:22,182 : modules.menu : INFO : No result back, stopping...
+2024-05-22 15:55:22,182 : root : INFO : Завершение программы
