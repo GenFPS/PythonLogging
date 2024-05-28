@@ -1,7 +1,7 @@
 import logging.config
 
 
-LOGGING_CONFIG = {
+LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
     "formatters": {
@@ -24,6 +24,13 @@ LOGGING_CONFIG = {
             "mode": "w"
         }
     },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
     "root": {
         "level": "DEBUG",
         "handlers": [
@@ -35,4 +42,4 @@ LOGGING_CONFIG = {
 
 
 def activate_logging():
-    logging.config.dictConfig(LOGGING_CONFIG)
+    logging.config.dictConfig(LOGGING)

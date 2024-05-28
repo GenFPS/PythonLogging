@@ -2,7 +2,7 @@ import logging
 from logConfig.log_config import activate_logging
 from modules.menu import start
 
-IS_LOGGER_CONFIG_USED = False
+IS_LOGGER_CONFIG_USED = True
 
 FORMAT = '%(asctime)s : %(name)s : %(levelname)s : %(message)s'
 
@@ -25,7 +25,10 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    numbers = [1, 2, 4]
+    itr = iter(numbers)
+    print(itr)
 
 
 
